@@ -1,0 +1,57 @@
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 440px;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  padding: 1rem;
+
+  & h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .line {
+    height: 4px;
+    background-color: white;
+    margin-bottom: 1rem;
+
+    & div {
+      width: 30%;
+      height: 100%;
+      background-color: orange;
+    }
+  }
+  .wrapper {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & div {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 200px;
+    margin-right: 0.5rem 0;
+    outline: none;
+  }
+
+  & button {
+    margin-top: 1.5rem;
+    background-color: dodgerblue;
+    columns: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+
+    &:disabled {
+      background: #848484;
+      color: black;
+      cursor: not-allowed;
+    }
+  }
+}

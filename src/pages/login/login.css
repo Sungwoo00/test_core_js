@@ -1,0 +1,45 @@
+.container {
+  max-width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  & h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  & hr {
+    margin: 2rem 0;
+    height: 4px;
+    background-color: white;
+  }
+
+  & form {
+    margin-bottom: 5rem;
+
+    & input {
+      box-sizing: border-box;
+      border: 1px solid rgb(122, 122, 122);
+      padding: 1rem;
+      min-width: 300px;
+      margin: 0.2rem 0;
+
+      &:focus {
+        border: 1px solid dodgerblue;
+      }
+    }
+
+    & button[type='submit'] {
+      margin-top: 1.5rem;
+      border: none;
+      background: dodgerblue;
+      color: white;
+      padding: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+}
